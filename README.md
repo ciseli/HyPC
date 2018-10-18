@@ -1,1 +1,1 @@
-# HyPC-processing-software
+# HyPC visualisation and processing
