@@ -1,3 +1,19 @@
+"""
+Base HyPC format
+
+Description:
+    Base HyPC format script used to:
+        - Convert ASCII point cloud to HyPC point cloud
+    Also contains methods to update existing HyPC point clouds
+
+Required inputs:
+    -ASCII based point cloud file
+
+Created by: Christopher Iseli
+Last Modified: 20/10/2018 (Christopher Iseli)
+"""
+
+
 import numpy as np
 import pandas as pd
 import time, math

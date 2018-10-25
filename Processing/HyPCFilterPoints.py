@@ -1,3 +1,17 @@
+"""
+HyPC point filtering module
+
+Description:
+    Filter HyPC point cloud based on attribute values
+
+Required inputs:
+    -HyPC point cloud file(s)
+    -Attribute name and value to filter by
+
+Created by: Christopher Iseli
+Last Modified: 20/10/2018 (Christopher Iseli)
+"""
+
 import pickle, math, time
 import numpy as np
 import HyPC
@@ -9,8 +23,8 @@ import time
 inputFname = "pointCloud_sample.hypc"
 outputFname = "pointCloud_sample1.hypc"
 
-attributeName = '1'
-attributeValue = False
+attributeName = '1'         #   Attribute name to filter
+attributeValue = False      #   Attribute value to filter by
 ##--------------------##
 
 with open(inputFname, "rb") as f:

@@ -1,7 +1,15 @@
-# import sys,random,math
-# import numpy as np
+"""
+HyPC Spectral Profile
+
+Description:
+    Opens window for viewing spectral profile of points
+
+Created by: Christopher Iseli
+Last Modified: 20/10/2018 (Christopher Iseli)
+"""
+
+
 from PyQt5 import QtGui, uic
-# import pyqtgraph.opengl as gl
 import pyqtgraph as pg
 
 

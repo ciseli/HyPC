@@ -1,3 +1,17 @@
+"""
+HyPC local height module
+
+Description:
+    Utilises a DTM or DEM to compute height above ground level (AGL) for each point
+
+Required inputs:
+    - HyPC point cloud file
+    - DTM or DEM raster .tif
+
+Created by: Christopher Iseli
+Last Modified: 20/10/2018 (Christopher Iseli)
+"""
+
 import pickle, math, time
 import numpy as np
 import HyPC

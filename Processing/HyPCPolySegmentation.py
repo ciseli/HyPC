@@ -1,3 +1,18 @@
+"""
+HyPC polygon segmentation module
+
+Description:
+    Segment points based on a polygon shapefile. Each polygon in the specified shapefile creates a new segment.
+    All polygons within a single shapefile are assigned to a single class
+
+Required inputs:
+    - HyPC point cloud file
+    - polygon shapefile
+
+Created by: Christopher Iseli
+Last Modified: 20/10/2018 (Christopher Iseli)
+"""
+
 import pickle, math, time
 import numpy as np
 import HyPC

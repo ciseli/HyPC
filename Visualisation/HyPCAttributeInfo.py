@@ -1,4 +1,12 @@
+"""
+HyPC Attribute information
 
+Description:
+    Opens window for viewing attribute information for specific point
+
+Created by: Christopher Iseli
+Last Modified: 20/10/2018 (Christopher Iseli)
+"""
 from PyQt5 import QtGui, uic,QtCore,QtWidgets
 
 import pyqtgraph as pg

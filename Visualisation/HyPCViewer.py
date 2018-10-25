@@ -1,4 +1,18 @@
 """
+HyPC Viewer
+
+Description:
+    Base script for running the HyPC visualiser
+
+Required inputs:
+    -HyPC point cloud file
+
+Created by: Christopher Iseli
+Last Modified: 20/10/2018 (Christopher Iseli)
+
+
+NOTES:
+
 Need to add the following to Pyqtgraph's GLViewWidget.py setCameraPosition() function
 
     if pos is not None:
@@ -9,8 +23,6 @@ TODO:
 Create Reset camera boolean in UpdatePointCloud()
     -only reset camera when necassary
 Remove shapefile reference layer
-
-
 
 """
 

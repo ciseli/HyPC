@@ -1,3 +1,13 @@
+"""
+HyPC viewer functions
+
+Description:
+    Provides common functions that can be accessed from the main HyPC viewer
+
+Created by: Christopher Iseli
+Last Modified: 20/10/2018 (Christopher Iseli)
+"""
+
 import numpy as np
 import shapefile
 import random

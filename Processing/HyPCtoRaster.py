@@ -1,3 +1,16 @@
+"""
+HyPC to raster module
+
+Description:
+    Rasterise a HyPC point cloud to a grid
+
+Required inputs:
+    - HyPC point cloud file
+
+Created by: Christopher Iseli
+Last Modified: 20/10/2018 (Christopher Iseli)
+"""
+
 import pickle, math, time
 import numpy as np
 import gdal

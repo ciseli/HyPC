@@ -1,4 +1,16 @@
-## Modified line 330 in GLViewWidget.py
+"""
+HyPC Plot widget
+
+Description:
+    Called from the HyPCViewer script
+
+    Contains all point cloud plotting functions and features
+
+Created by: Christopher Iseli
+Last Modified: 20/10/2018 (Christopher Iseli)
+"""
+
+## NOTE:   Modified line 330 in GLViewWidget.py
 
 import sys,random,math,time
 import numpy as np
@@ -206,7 +218,7 @@ class hypcPlotWidget(gl.GLViewWidget):
         else:
             super(hypcPlotWidget, self).mouseMoveEvent(ev)
 
-    def mPosition(self,ev):
+    def mPosition(self,ev):         ## This function is based on the method outlined at: https://groups.google.com/forum/?nomobile=true#!msg/pyqtgraph/mZiiLO8hS70/nSkTmYPtIiYJ
         #This function is called by a mouse event
         ## Get mouse coordinates saved when the mouse is clicked( incase dragging)
         mx = ev.pos().x()

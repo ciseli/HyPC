@@ -1,3 +1,18 @@
+"""
+HyPC ground filter module
+
+Description:
+    Utilises the cloth simuldation filter (CSF) algorithm (reference) to identify ground points
+        (W. Zhang, J. Qi, P. Wan, H. Wang, D. Xie, X. Wang, and G. Yan. “An easy-to-useairborne  LiDAR  data  filtering  method  based  on  cloth  simulation”)
+
+Required inputs:
+    -HyPC point cloud file
+
+Created by: Christopher Iseli
+Last Modified: 20/10/2018 (Christopher Iseli)
+"""
+
+
 import pickle, math, time
 import HyPC
 from HyPC import hypc
@@ -7,7 +22,7 @@ import CSF
 inputFname = "pointCloud_sample.hypc"
 outputFname = "pointCloud_sample1.hypc"
 
-rigidness = 2
+rigidness = 2                   # Details on parameters are available at: http://ramm.bnu.edu.cn/projects/CSF/document/
 cloth_resolution = 0.5
 threshold = 0.5
 iterations = 500
