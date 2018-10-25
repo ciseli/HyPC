@@ -6,8 +6,8 @@ University of Tasmania
 
 The repositry contains the source code of the produced HyPC format, processing and visualisation software
 
--- Processing  
-  \HyPC.py 
+- Processing  
+  \HyPC.py   
   \HyPCFilterPoints.py  
   \HyPCGroundFilter.py  
   \HyPCLocalHeight.py  
@@ -16,7 +16,7 @@ The repositry contains the source code of the produced HyPC format, processing a
   \HyPCSpectralCrownFeatures.py  
   \HyPCStructuralCrownFeatures.py  
   \HyPCtoRaster.py  
--- Visualisation  
+- Visualisation  
   \HyPC.py  
   \HyPCAttributeInfo.py  
   \HyPCPlotWidget.py  
