@@ -38,7 +38,7 @@ from HyPCAttributeInfo import *
 from HyPC import hypc
 
 
-inputFname = "pointCloud_sample.hypc"
+# inputFname = "pointCloud_sample.hypc"
 
 pg.setConfigOption('background', 'k')
 pg.setConfigOption('foreground', 0.75)
@@ -46,7 +46,7 @@ pg.setConfigOption('foreground', 0.75)
 class hypcViewer(QtGui.QMainWindow):
     def __init__(self):
         super(hypcViewer, self).__init__()
-        uic.loadUi('App.ui', self)
+        uic.loadUi('HyPCViewer.ui', self)
 
         self.max_display_points = 500000
         self.statusbar.showMessage("Ready...")
