@@ -10,7 +10,8 @@ Created by: Christopher Iseli
 Last Modified: 20/10/2018 (Christopher Iseli)
 """
 
-## NOTE:   Modified line 330 in GLViewWidget.py
+## NOTE: To support PyQT5, Modified line 330 in pyqtgraph --> GLViewWidget.py
+## << if QT_LIB in ['PyQt4', 'PySide']: >> replaced with << if not USE_PYQT5: >>
 
 import sys,random,math,time
 import numpy as np
@@ -96,8 +97,6 @@ class hypcPlotWidget(gl.GLViewWidget):
 
     def plotSegments(self,pointCloud,subset_factor,in_idxs = None):
         num_points_displayed = 0
-        # print("Number to display: ",len(pointCloud.segment_indices))
-
         if in_idxs == None:
             for i, idx in enumerate(pointCloud.segment_indices[:]):
                 if SELECTED_POINT_SEGMENT==i:
@@ -218,7 +217,8 @@ class hypcPlotWidget(gl.GLViewWidget):
         else:
             super(hypcPlotWidget, self).mouseMoveEvent(ev)
 
-    def mPosition(self,ev):         ## This function is based on the method outlined at: https://groups.google.com/forum/?nomobile=true#!msg/pyqtgraph/mZiiLO8hS70/nSkTmYPtIiYJ
+    ## This function is based on the method outlined at: https://groups.google.com/forum/?nomobile=true#!msg/pyqtgraph/mZiiLO8hS70/nSkTmYPtIiYJ
+    def mPosition(self,ev):         
         #This function is called by a mouse event
         ## Get mouse coordinates saved when the mouse is clicked( incase dragging)
         mx = ev.pos().x()
