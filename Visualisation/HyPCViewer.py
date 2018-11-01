@@ -18,11 +18,6 @@ Need to add the following to Pyqtgraph's GLViewWidget.py setCameraPosition() fun
     if pos is not None:
         self.opts['center'] = Vector(pos)
 
-TODO:
-
-Create Reset camera boolean in UpdatePointCloud()
-    -only reset camera when necassary
-Remove shapefile reference layer
 
 """
 
@@ -36,9 +31,6 @@ from HyPCViewerFunctions import *
 from HyPCSpectralProfile import *
 from HyPCAttributeInfo import *
 from HyPC import hypc
-
-
-# inputFname = "pointCloud_sample.hypc"
 
 pg.setConfigOption('background', 'k')
 pg.setConfigOption('foreground', 0.75)
