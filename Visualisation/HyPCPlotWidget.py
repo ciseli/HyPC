@@ -100,19 +100,19 @@ class hypcPlotWidget(gl.GLViewWidget):
         if in_idxs == None:
             for i, idx in enumerate(pointCloud.segment_indices[:]):
                 if SELECTED_POINT_SEGMENT==i:
-                    if SELECTED_POINT_IDX in idx[::subset_factor]:
-                        # print("POINT AT IDX " +str(SELECTED_POINT_IDX) +" IS DISPLAYED")
-                        # print("COLOUR: ", self.colours[SELECTED_POINT_IDX] )
-                        continue
-                    else:
+#                     if SELECTED_POINT_IDX in idx[::subset_factor]:
+#                         # print("POINT AT IDX " +str(SELECTED_POINT_IDX) +" IS DISPLAYED")
+#                         # print("COLOUR: ", self.colours[SELECTED_POINT_IDX] )
+#                         continue
+#                     else:
                         # print("POINT NOT FOUND")
-                        scatterPlot = gl.GLScatterPlotItem()
-                        scatterPlot.setData(idx=i,pos=pointCloud.kdTree.data[SELECTED_POINT_IDX,:3]-pointCloud.medians, color=self.colours[SELECTED_POINT_IDX], size=self.pointSize, pxMode=True)
-                        # scatterPlot.setData(idx=i, pos=pointCloud.kdTree.data[idx[::subset_factor], :3] - pointCloud.medians,color=(random.random(),random.random(),random.random(),1.0),size=0.25,pxMode=False)
-                        scatterPlot.setGLOptions('opaque')
-                        self.addItem(scatterPlot)
-                        self.scatterplotItems.append(scatterPlot)
-                        num_points_displayed += 1
+                    scatterPlot = gl.GLScatterPlotItem()
+                    scatterPlot.setData(idx=i,pos=pointCloud.kdTree.data[SELECTED_POINT_IDX,:3]-pointCloud.medians, color=self.colours[SELECTED_POINT_IDX], size=self.pointSize, pxMode=True)
+                    # scatterPlot.setData(idx=i, pos=pointCloud.kdTree.data[idx[::subset_factor], :3] - pointCloud.medians,color=(random.random(),random.random(),random.random(),1.0),size=0.25,pxMode=False)
+                    scatterPlot.setGLOptions('opaque')
+                    self.addItem(scatterPlot)
+                    self.scatterplotItems.append(scatterPlot)
+                    num_points_displayed += 1
 
 
                 scatterPlot = gl.GLScatterPlotItem()
